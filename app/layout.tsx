@@ -20,6 +20,20 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: SITE.title,
   description: SITE.description,
+  keywords: [
+    "портфолио",
+    "веб-разработка",
+    "лендинг",
+    "ремонт квартир",
+    "демо",
+    "Next.js",
+  ],
+  openGraph: {
+    title: SITE.title,
+    description: SITE.description,
+    type: "website",
+    locale: "ru_RU",
+  },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },

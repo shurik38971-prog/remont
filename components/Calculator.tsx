@@ -8,6 +8,7 @@ import {
   type ObjectType,
   type RepairType,
 } from "@/lib/calculator";
+import { CALCULATOR_DEMO_NOTE } from "@/lib/data";
 import { useModal } from "./ModalContext";
 import { SectionHead } from "./ui/SectionHead";
 import { Container } from "./ui/Container";
@@ -76,7 +77,7 @@ export function Calculator({ preset }: CalculatorProps) {
             <SectionHead
               label="Калькулятор"
               title="Рассчитайте стоимость ремонта"
-              description="Демо-калькулятор показывает сценарий расчёта стоимости для пользователя. Цифры условные и не являются коммерческим предложением."
+              description={`${CALCULATOR_DEMO_NOTE} Цифры условные и не являются коммерческим предложением.`}
               light
             />
             <ul className="mt-8 space-y-3.5 text-cream/70">

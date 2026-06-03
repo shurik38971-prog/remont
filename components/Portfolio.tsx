@@ -74,7 +74,10 @@ export function Portfolio() {
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.08]"
                 sizes={item.wide ? "(max-width: 1024px) 100vw, 66vw" : "(max-width: 1024px) 50vw, 33vw"}
               />
-              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-bg/95 via-bg/20 to-transparent p-6 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
+              <span className="absolute left-3 top-3 z-10 rounded bg-bg/80 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-accent backdrop-blur-sm">
+                Демо
+              </span>
+              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-bg/95 via-bg/30 to-transparent p-5 opacity-100 transition-opacity duration-250 sm:p-6 md:opacity-0 md:group-hover:opacity-100">
                 <span className="text-xs uppercase tracking-widest text-accent">
                   {item.meta}
                 </span>

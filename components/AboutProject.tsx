@@ -1,4 +1,4 @@
-import { ABOUT_PROJECT, SITE } from "@/lib/data";
+import { ABOUT_PROJECT, SITE, UX_HIGHLIGHTS } from "@/lib/data";
 import { Container } from "./ui/Container";
 import { FadeIn } from "./ui/FadeIn";
 
@@ -19,6 +19,24 @@ export function AboutProject() {
           <p className="mt-6 text-lg leading-relaxed text-ink-muted">
             {ABOUT_PROJECT.text}
           </p>
+          <div className="mt-8">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-ink-muted">
+              UX-решения в демо
+            </h3>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {UX_HIGHLIGHTS.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-2 text-[15px] text-ink"
+                >
+                  <span className="text-accent" aria-hidden>
+                    ✓
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="mt-8 flex flex-wrap gap-2">
             {SITE.stack.map((tech) => (
               <span

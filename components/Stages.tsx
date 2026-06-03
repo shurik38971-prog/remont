@@ -1,4 +1,4 @@
-import { STAGES } from "@/lib/data";
+import { STAGES, STAGES_SECTION } from "@/lib/data";
 import { SectionHead } from "./ui/SectionHead";
 import { Container } from "./ui/Container";
 import { CtaBar } from "./ui/CtaBar";
@@ -10,9 +10,9 @@ export function Stages() {
       <Container>
         <FadeIn>
           <SectionHead
-            label="Процесс"
-            title="Этапы сотрудничества"
-            description="Прозрачная структура проекта — типичный блок для лендинга ремонтной компании."
+            label={STAGES_SECTION.label}
+            title={STAGES_SECTION.title}
+            description={STAGES_SECTION.description}
           />
         </FadeIn>
 

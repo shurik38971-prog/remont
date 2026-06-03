@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { RepairType } from "@/lib/calculator";
 import { ModalProvider } from "./ModalContext";
+import { DemoStrip } from "./DemoStrip";
 import { Header } from "./Header";
 import { Hero } from "./Hero";
 import { Types } from "./Types";
@@ -23,6 +24,7 @@ export function Home() {
   return (
     <ModalProvider>
       <Header />
+      <DemoStrip />
       <main className="pb-[72px] md:pb-0">
         <Hero />
         <Types onPreset={setCalcPreset} />

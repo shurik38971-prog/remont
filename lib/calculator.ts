@@ -1,3 +1,5 @@
+/** Условные коэффициенты только для демо-расчёта в портфолио, не коммерческое предложение */
+
 export type RepairType = "cosmetic" | "newbuild" | "capital" | "design";
 export type ObjectType = "apartment" | "house" | "commercial";
 export type MaterialLevel = "standard" | "comfort" | "premium";

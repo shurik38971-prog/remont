@@ -26,7 +26,7 @@ export function SectionHead({
       </span>
       <h2
         className={cn(
-          "font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl",
+          "font-display text-3xl font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.75rem]",
           light ? "text-cream" : "text-ink",
         )}
       >

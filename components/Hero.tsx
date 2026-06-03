@@ -8,7 +8,7 @@ import { Container } from "./ui/Container";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative flex min-h-dvh items-center pt-[72px] text-cream">
+    <section id="hero" className="relative flex min-h-dvh items-center pt-[118px] text-cream">
       <div className="absolute inset-0 -z-10">
         <Image
           src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=1920&q=80"
@@ -76,19 +76,19 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="mt-12 grid grid-cols-2 gap-6 border-t border-white/10 pt-8 sm:grid-cols-4"
+          className="mt-12 grid grid-cols-1 gap-4 border-t border-white/10 pt-8 sm:grid-cols-2 lg:grid-cols-3"
         >
           {HERO_FEATURES.map((item, i) => (
             <motion.li
               key={item}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 + i * 0.06 }}
+              transition={{ delay: 0.4 + i * 0.05 }}
+              className="rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 backdrop-blur-sm"
             >
-              <span className="block font-display text-lg font-semibold text-accent sm:text-xl">
-                {String(i + 1).padStart(2, "0")}
+              <span className="block text-sm font-medium leading-snug text-cream/90">
+                {item}
               </span>
-              <span className="mt-1 block text-sm text-cream/60">{item}</span>
             </motion.li>
           ))}
         </motion.ul>
