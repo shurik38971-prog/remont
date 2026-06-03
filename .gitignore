@@ -4,3 +4,7 @@ Thumbs.db
 .env
 .env.*
 .vercel
+node_modules
+.next
+out
+*.tsbuildinfo

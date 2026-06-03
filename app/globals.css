@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+  }
+
+  body {
+    @apply bg-surface font-body text-ink antialiased;
+  }
+}
+
+@layer components {
+  .form-label {
+    @apply mb-2 block text-xs font-semibold uppercase tracking-wider text-cream/60;
+  }
+
+  .form-label-dark {
+    @apply mb-2 block text-xs font-semibold uppercase tracking-wider text-ink-muted;
+  }
+}
